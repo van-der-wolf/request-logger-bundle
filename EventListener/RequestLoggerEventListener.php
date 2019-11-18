@@ -54,7 +54,8 @@ final class RequestLoggerEventListener
                 'latency' => $this->getTime($request),
                 'client-ip' => $clientIp,
                 'status_code' => $statusCode,
-                'user-agent' => $userAgent
+                'user-agent' => $userAgent,
+                'body' => (string) $request->getContent(),
             ]
         );
     }
