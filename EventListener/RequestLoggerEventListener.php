@@ -55,7 +55,7 @@ final class RequestLoggerEventListener
                 'client-ip' => $clientIp,
                 'status_code' => $statusCode,
                 'user-agent' => $userAgent,
-                'body' => (string) $request->getContent(),
+                'body' => (string)$request->getContent(),
             ]
         );
     }
